@@ -400,10 +400,10 @@ function! s:InitTypes() abort
     let type_bro.kinds      = [
                 \ {'short' : 'm', 'long' : 'module',        'fold' : 0, 'stl' : 0},
                 \ {'short' : 'g', 'long' : 'global',        'fold' : 1, 'stl' : 0},
+                \ {'short' : 'c', 'long' : 'constants',     'fold' : 1, 'stl' : 0},
+                \ {'short' : 't', 'long' : 'types',         'fold' : 1, 'stl' : 0},
                 \ {'short' : 'f', 'long' : 'functions',     'fold' : 0, 'stl' : 1},
                 \ {'short' : 'e', 'long' : 'events',        'fold' : 0, 'stl' : 1},
-                \ {'short' : 't', 'long' : 'types',         'fold' : 1, 'stl' : 0},
-                \ {'short' : 'c', 'long' : 'constants',     'fold' : 1, 'stl' : 0},
                 \ ]
     let type_bro.sro        = '::'
     let s:known_types.bro = type_bro
