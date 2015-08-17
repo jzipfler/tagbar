@@ -401,6 +401,7 @@ function! s:InitTypes() abort
                 \ {'short' : 'f', 'long' : 'function',  'fold' : 0, 'stl' : 0},
                 \ {'short' : 'e', 'long' : 'event',     'fold' : 0, 'stl' : 0},
                 \ ]
+    let type_bro.sro        = '::'
     let s:known_types.bro = type_bro
     " Java {{{3
     let type_java = s:TypeInfo.New()
