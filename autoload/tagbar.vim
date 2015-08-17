@@ -394,6 +394,14 @@ function! s:InitTypes() abort
         \ {'short' : 'a', 'long' : 'named anchors',       'fold' : 0, 'stl' : 1}
     \ ]
     let s:known_types.html = type_html
+    " Bro {{{3
+    let type_bro = s:TypeInfo.New()
+    let type_bro.ctagstype  = 'bro'
+    let type_bro.kinds      = [
+                \ {'short' : 'f', 'long' : 'function',  'fold' : 0, 'stl' : 0},
+                \ {'short' : 'e', 'long' : 'event',     'fold' : 0, 'stl' : 0},
+                \ ]
+    let s:known_types.bro = type_bro
     " Java {{{3
     let type_java = s:TypeInfo.New()
     let type_java.ctagstype = 'java'
