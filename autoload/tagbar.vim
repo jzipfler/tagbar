@@ -398,8 +398,8 @@ function! s:InitTypes() abort
     let type_bro = s:TypeInfo.New()
     let type_bro.ctagstype  = 'bro'
     let type_bro.kinds      = [
-                \ {'short' : 'f', 'long' : 'function',  'fold' : 0, 'stl' : 0},
-                \ {'short' : 'e', 'long' : 'event',     'fold' : 0, 'stl' : 0},
+                \ {'short' : 'f', 'long' : 'functions',     'fold' : 0, 'stl' : 1},
+                \ {'short' : 'e', 'long' : 'events',        'fold' : 0, 'stl' : 1},
                 \ ]
     let type_bro.sro        = '::'
     let s:known_types.bro = type_bro
