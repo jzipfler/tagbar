@@ -1,0 +1,8 @@
+--langdef=bro
+--langmap=bro:.bro
+--regex-bro=/^module[ \t]+([a-zA-Z_]+);/\1/m,module/
+--regex-bro=/^function[ \t]+([a-zA-Z0-9_]+)/\1/f,functions/
+--regex-bro=/^event[ \t]+([a-zA-Z0-9_]+)/\1/e,events/
+--regex-bro=/[ \t]*global[ \t]+([a-zA-Z0-9_]+)[ \t]*:/\1/g,global/
+--regex-bro=/[ \t]*const[ \t]+([a-zA-Z0-9_]+)/\1/c,constants/
+--regex-bro=/[ \t]*type[ \t]+([a-zA-Z0-9_]+)/\1/t,types/
