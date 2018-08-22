@@ -89,7 +89,7 @@ function! tagbar#types#ctags#init(supported_types) abort
     \ ]
     let types.beta = type_beta
     " Bro {{{1
-    let type_bro = s:TypeInfo.New()
+    let type_bro = tagbar#prototypes#typeinfo#new()
     let type_bro.ctagstype  = 'bro'
     let type_bro.kinds      = [
                 \ {'short' : 'm', 'long' : 'module',        'fold' : 0, 'stl' : 0},
@@ -100,7 +100,6 @@ function! tagbar#types#ctags#init(supported_types) abort
                 \ {'short' : 'e', 'long' : 'events',        'fold' : 0, 'stl' : 1},
                 \ ]
     let type_bro.sro        = '::'
-    let s:known_types.bro = type_bro
     " C {{{1
     let type_c = tagbar#prototypes#typeinfo#new()
     let type_c.ctagstype = 'c'
